@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Display Tech Explorer: a map of monitor display names</title>
+  <meta name="description" content="A compact, sourced learning map of monitor display technology names: LCD, OLED, Micro-LED and the independent labels that combine with them.">
+  <meta name="color-scheme" content="dark">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#detail">Skip to details</a>
+  <header class="site-head">
+    <h1>Display Tech Explorer</h1>
+    <p class="lede">Monitor names answer different questions: where the light comes from, how the crystals move, what sits behind them. Pick a name on the map to see what it means and where it fits.</p>
+    <nav aria-label="Sections"><a href="#explorer">Name map</a><a href="#compare">Compare</a><a href="#sources">Sources</a></nav>
+  </header>
+
+  <main>
+    <section id="explorer" aria-labelledby="explorer-h">
+      <h2 id="explorer-h" class="sr-only">Name map and details</h2>
+      <div class="explorer">
+        <nav id="map" class="map" aria-labelledby="map-h">
+          <div class="map-head">
+            <h2 id="map-h">Name map</h2>
+            <p class="overlap-note">A learning map of <strong>overlapping dimensions</strong>, not a mutually exclusive product taxonomy: one monitor can carry several of these names at once.</p>
+            <a class="to-detail" href="#detail">Selected: <span class="to-detail-name">LCD</span> · view details ↓</a>
+          </div>
+          <ul class="tree" id="tree"></ul>
+        </nav>
+
+        <aside id="detail" class="detail" aria-labelledby="detail-title" tabindex="-1">
+          <div class="finder" role="search">
+            <label for="q">Find any name in the guide</label>
+            <input id="q" type="search" autocomplete="off" spellcheck="false" placeholder="e.g. IPS, QLED, Mini-LED" aria-describedby="count" aria-controls="results">
+            <p id="count" class="count" aria-live="polite"></p>
+            <ul id="results" class="results" aria-label="Matching names"></ul>
+          </div>
+          <article id="entry" class="entry"></article>
+          <p id="announce" class="sr-only" aria-live="polite"></p>
+        </aside>
+      </div>
+      <noscript><p class="noscript">The map and search need JavaScript. The bibliography is in <a href="SOURCES.md">SOURCES.md</a>.</p></noscript>
+    </section>
+
+    <section id="compare" aria-labelledby="compare-h">
+      <h2 id="compare-h">Compare</h2>
+      <p class="sec-note">Directional tendencies from the cited sources, <strong>not measurements</strong>, and no product-level claim: individual models vary. Where a pairing mixes dimensions, the note says so.</p>
+      <div class="cmp-controls">
+        <label>First <select id="cmp-a"></select></label>
+        <button id="cmp-swap" type="button" class="btn" aria-label="Swap the two choices">⇄ Swap</button>
+        <label>Second <select id="cmp-b"></select></label>
+      </div>
+      <p id="cmp-note" class="cmp-note" aria-live="polite"></p>
+      <div class="cmp-scroll"><table id="cmp-table"><caption class="sr-only">Comparison of tendencies</caption><thead></thead><tbody></tbody></table></div>
+    </section>
+
+    <section id="sources" aria-labelledby="sources-h">
+      <h2 id="sources-h">Sources</h2>
+      <p class="sec-note">Inline IDs (S01…) link here. Vendor pages describe the vendor’s own technology; their performance claims are theirs. External links open in a new tab.</p>
+      <ol id="biblio" class="biblio"></ol>
+      <div id="gaps" class="gaps"></div>
+    </section>
+  </main>
+
+  <footer class="site-foot"><p>Static learning page. No tracking, no remote assets. Names and claims are summarised from the sources above; check a specific monitor’s reviews before buying.</p></footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/diagrams.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
