@@ -20,7 +20,7 @@ It's a map of **overlapping dimensions**, not a mutually exclusive product taxon
 - **QLED** is treated as consumer branding (commonly an LED-backlit LCD with a quantum-dot layer), kept distinct from QD-OLED. **MLA OLED** and **PHOLED** are cited for what the technologies are; their **Monitor use not verified** badge is separate from source status, because the sources don’t say which monitors use them. Vendor performance and deployment statements are omitted or attributed.
 - **Source pending:** S-AMOLED and QD-LED still have no verified source. They sit in a neutral **Unclassified / source pending** map group with no family or axis, give only the requested name and expansion, and show a static labelled card instead of a diagram. Nothing is said about their structure or how they relate to other names.
 - **General background:** a few inherited entries without a dedicated source carry a visible badge.
-- **Publication status:** not published, and not fully sourced. The open gaps above are shown on the page itself.
+- **Publication status:** publicly hosted at https://git.marcuschiu.com/display-tech-explorer/, but still not fully sourced. The open gaps above are shown on the page itself.
 
 ## Layout
 
